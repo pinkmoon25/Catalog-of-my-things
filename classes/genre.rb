@@ -1,4 +1,6 @@
 class Genre
+  attr_reader :items
+
   def initialize(name, items)
     @id = 0
     @name = name
