@@ -1,3 +1,5 @@
+require 'date'
+
 class Item
   attr_reader :genre, :author, :source, :label, :publish_date
 
@@ -25,5 +27,17 @@ class Item
   def add_label=(label)
     @label = label
     label.add_item(self)
+  end
+
+  def move_to_archive
+    @archived = true if can_be_archived?
+  end
+
+  private
+
+  def can_be_archived?
+    current_year = Date.today.year
+    publish_year = Date.parse(publish_date).year
+    (current_year - publish_year) > 10
   end
 end
