@@ -6,7 +6,7 @@ class Item
 
   def initialize(publish_date)
     @id = Random.rand(1..1000)
-    @publish_date = publish_date
+    @publish_date = Date.parse(publish_date)
     @archived = false
   end
 
@@ -38,7 +38,7 @@ class Item
 
   def can_be_archived?
     current_year = Date.today.year
-    publish_year = Date.parse(publish_date).year
+    publish_year = publish_date.year
     (current_year - publish_year) > 10
   end
 end
