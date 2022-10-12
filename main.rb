@@ -1,10 +1,14 @@
+require_relative 'book_app'
+
 def run_first(option)
   case option
-  when 1 # list
+  when 1
+    BookApp.list_all_books
   when 2 # list
   when 3 # list
   when 4 # list
-  when 5 # list
+  when 5
+    BookApp.list_all_labels
   when 6 # list
   else
     run_second(option)
@@ -14,7 +18,8 @@ end
 def run_second(option)
   case option
   when 7 # list
-  when 8 # Add
+  when 8
+    BookApp.create_book
   when 9 # Add
   else
     puts 'Command Not Found'
