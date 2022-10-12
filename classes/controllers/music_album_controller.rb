@@ -19,7 +19,7 @@ class MusicAlbumController < Provider
     def save
       data = []
       @music_albums.each do |item|
-        data.push({ publish_date: item.publish_date, on_spotify: item.on_spotify, archived: item.archived,
+        data.push({ id: item.id, publish_date: item.publish_date, on_spotify: item.on_spotify, archived: item.archived,
                     genre: { name: item.genre.name } })
       end
       File.write(@file_name, JSON.generate(data))
