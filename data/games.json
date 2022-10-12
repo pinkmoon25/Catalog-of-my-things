@@ -46,5 +46,11 @@
     "Multiplayer": true,
     "Last_played": "10-1-2022",
     "Author": "Sunworld systems"
+  },
+  {
+    "Publish_date": "2022-12-12",
+    "Multiplayer": false,
+    "Last_played": "12-12-2023",
+    "Author": "Nazara technologies"
   }
 ]

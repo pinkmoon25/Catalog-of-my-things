@@ -1,7 +1,7 @@
 require 'json'
 require_relative 'game'
 require_relative 'author'
-require_relative 'load_games'
+require_relative 'load_storage'
 
 class GameApp
   @game_file = './data/games.json'
