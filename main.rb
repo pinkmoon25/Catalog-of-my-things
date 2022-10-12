@@ -1,11 +1,15 @@
+require_relative './classes/game_app'
+
 def run_first(option)
   case option
   when 1 # list
   when 2 # list
-  when 3 # list
+  when 3
+    GameApp.list_games
   when 4 # list
   when 5 # list
-  when 6 # list
+  when 6
+    GameApp.list_all_authors
   else
     run_second(option)
   end
@@ -14,8 +18,10 @@ end
 def run_second(option)
   case option
   when 7 # list
-  when 8 # Add
+  when 8 # list
   when 9 # Add
+  when 10
+    GameApp.add_game
   else
     puts 'Command Not Found'
   end
