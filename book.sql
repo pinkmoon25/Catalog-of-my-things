@@ -7,3 +7,9 @@ CREATE TABLE item (
     archived BOOLEAN,
     FOREIGN KEY (genre_id) REFERENCES genres (id),
 );
+
+CREATE TABLE label (
+    id INT NOT NULL PRIMARY KEY,
+    title VARCHAR (50)
+    color VARCHAR (50)
+);
