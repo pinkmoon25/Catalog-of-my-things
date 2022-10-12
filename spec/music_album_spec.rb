@@ -5,7 +5,7 @@ describe MusicAlbum do
     @music_album = MusicAlbum.new('2020-02-02', false)
   end
 
-  describe "#new" do
+  describe '#new' do
     it 'should be an Item' do
       @music_album.should be_an(Item)
     end
@@ -14,7 +14,7 @@ describe MusicAlbum do
     end
   end
 
-  describe "#publish_date" do
+  describe '#publish_date' do
     it 'should return a date object ' do
       @music_album.publish_date.should be_an_instance_of Date
     end
@@ -23,7 +23,7 @@ describe MusicAlbum do
     end
   end
 
-  describe "#on_spotify" do
+  describe '#on_spotify' do
     it 'should return a correct vaslue ' do
       @music_album.on_spotify.should eql false
     end

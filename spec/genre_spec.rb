@@ -8,7 +8,7 @@ describe Genre do
       @genre.should be_an_instance_of Genre
     end
   end
-  describe "#name" do
+  describe '#name' do
     it 'should return the correct name' do
       @genre.name.should eql 'Comedy'
     end
