@@ -1,5 +1,4 @@
 require_relative '../classes/game'
-require_relative '../classes/item'
 
 RSpec.describe Game do
   describe '#game' do
@@ -20,12 +19,12 @@ RSpec.describe Game do
       game.move_to_archive
       expect(game.archived).to be true
     end
-  end 
+  end
   describe 'game with last played at not older than 2 years' do
     it 'should not be able to be archived' do
       game = Game.new('10-10-2010', true, '10-10-2021')
       game.move_to_archive
       expect(game.archived).to be false
     end
-  end 
+  end
 end
