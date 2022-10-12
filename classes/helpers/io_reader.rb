@@ -7,6 +7,5 @@ class IOReader
     def read
       gets.chomp
     end
-
   end
 end

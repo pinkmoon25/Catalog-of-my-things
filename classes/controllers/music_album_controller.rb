@@ -8,7 +8,6 @@ class MusicAlbumController < Provider
   @music_albums = []
 
   class << self
-
     attr_reader :music_albums
 
     def create(publish_date, on_spotify)
