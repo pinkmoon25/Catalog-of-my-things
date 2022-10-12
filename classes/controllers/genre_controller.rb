@@ -2,7 +2,7 @@ require_relative './provider'
 require_relative '../models/genre'
 
 class GenreController < Provider
-  @file_name = './classes/storage/genres.json'
+  @file_name = './storage/genres.json'
   @genres = []
 
   class << self

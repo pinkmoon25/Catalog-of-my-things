@@ -3,7 +3,7 @@ require_relative 'provider'
 require 'json'
 
 class MusicAlbumController < Provider
-  @file_name = './classes/storage/music_albums.json'
+  @file_name = './storage/music_albums.json'
 
   @music_albums = []
 
