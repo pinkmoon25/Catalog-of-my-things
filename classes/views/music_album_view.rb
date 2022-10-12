@@ -1,5 +1,5 @@
 require_relative '../helpers/io_reader'
-require_relative '../controllers/music__album_controller'
+require_relative '../controllers/music_album_controller'
 require_relative 'genre_view'
 
 class MusicAlbumView
