@@ -1,15 +1,22 @@
+require_relative './classes/views/music_album_view'
+require_relative './classes/views/genre_view'
+require_relative './classes/game_app'
 require_relative 'book_app'
 
 def run_first(option)
   case option
   when 1
     BookApp.list_all_books
-  when 2 # list
-  when 3 # list
+  when 2
+    MusicAlbumView.all
+  when 3
+    GameApp.list_games
   when 4 # list
+    GenreView.all
   when 5
     BookApp.list_all_labels
-  when 6 # list
+  when 6
+    GameApp.list_all_authors
   else
     run_second(option)
   end
@@ -18,9 +25,13 @@ end
 def run_second(option)
   case option
   when 7 # list
+
   when 8
     BookApp.create_book
-  when 9 # Add
+  when 9
+    MusicAlbumView.add
+  when 10
+    GameApp.add_game
   else
     puts 'Command Not Found'
   end
@@ -28,6 +39,7 @@ end
 
 def ask_option
   options = [
+    '',
     'Please select an option by entering the following number:',
     '1. List all books',
     '2. List all music albums',
