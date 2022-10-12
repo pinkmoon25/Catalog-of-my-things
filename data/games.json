@@ -22,5 +22,29 @@
     "Multiplayer": true,
     "Last_played": "12-12-2022",
     "Author": "Rockstar games"
+  },
+  {
+    "Publish_date": "20-20-2022",
+    "Multiplayer": false,
+    "Last_played": "12-10-2022",
+    "Author": "Ea Sports Fifa"
+  },
+  {
+    "Publish_date": "20-20-2022",
+    "Multiplayer": false,
+    "Last_played": "23-03-2022",
+    "Author": "Piese Yeboah"
+  },
+  {
+    "Publish_date": "12-12-2011",
+    "Multiplayer": false,
+    "Last_played": "12-12-2022",
+    "Author": "EA Sports"
+  },
+  {
+    "Publish_date": "12-12-2022",
+    "Multiplayer": true,
+    "Last_played": "10-1-2022",
+    "Author": "Sunworld systems"
   }
 ]
