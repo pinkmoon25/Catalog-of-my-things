@@ -1,9 +1,14 @@
+require_relative './classes/views/music_album_view'
+require_relative './classes/views/genre_view'
+
 def run_first(option)
   case option
   when 1 # list
-  when 2 # list
+  when 2
+    MusicAlbumView.all
   when 3 # list
   when 4 # list
+    GenreView.all
   when 5 # list
   when 6 # list
   else
@@ -15,7 +20,8 @@ def run_second(option)
   case option
   when 7 # list
   when 8 # Add
-  when 9 # Add
+  when 9
+    MusicAlbumView.add
   else
     puts 'Command Not Found'
   end
@@ -23,6 +29,7 @@ end
 
 def ask_option
   options = [
+    '',
     'Please select an option by entering the following number:',
     '1. List all books',
     '2. List all music albums',
