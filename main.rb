@@ -1,17 +1,20 @@
 require_relative './classes/views/music_album_view'
 require_relative './classes/views/genre_view'
 require_relative './classes/game_app'
+require_relative 'book_app'
 
 def run_first(option)
   case option
-  when 1 # list
+  when 1
+    BookApp.list_all_books
   when 2
     MusicAlbumView.all
   when 3
     GameApp.list_games
   when 4 # list
     GenreView.all
-  when 5 # list
+  when 5
+    BookApp.list_all_labels
   when 6
     GameApp.list_all_authors
   else
@@ -22,7 +25,9 @@ end
 def run_second(option)
   case option
   when 7 # list
-  when 8 # Add
+
+  when 8
+    BookApp.create_book
   when 9
     MusicAlbumView.add
   when 10
