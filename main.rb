@@ -18,9 +18,10 @@ end
 def run_second(option)
   case option
   when 7 # list
-  when 8
-    GameApp.add_game
+  when 8 # list
   when 9 # Add
+  when 10
+    GameApp.add_game
   else
     puts 'Command Not Found'
   end
