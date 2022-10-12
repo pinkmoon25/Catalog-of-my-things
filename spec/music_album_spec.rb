@@ -24,8 +24,14 @@ describe MusicAlbum do
   end
 
   describe '#on_spotify' do
-    it 'should return a correct vaslue ' do
+    it 'should return a correct value ' do
       @music_album.on_spotify.should eql false
+    end
+  end
+
+  describe '#archived' do
+    it 'should return a correct value ' do
+      @music_album.archived.should eql false
     end
   end
 end
