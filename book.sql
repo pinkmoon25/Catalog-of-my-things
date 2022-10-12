@@ -8,6 +8,14 @@ CREATE TABLE item (
     FOREIGN KEY (genre_id) REFERENCES genres (id),
 );
 
+CREATE TABLE books (
+    id INT,
+    title VARCHAR(50),
+    publisher VARCHAR(50),
+    cover_state VARCHAR(50),
+    FOREIGN KEY(id) REFERENCES item(id)
+)
+
 CREATE TABLE label (
     id INT NOT NULL PRIMARY KEY,
     title VARCHAR (50)
