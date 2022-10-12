@@ -1,6 +1,6 @@
 require_relative '../item'
 class MusicAlbum < Item
-  attr_reader :on_spotify
+  attr_reader :on_spotify, :id
 
   def initialize(publish_date, on_spotify)
     @on_spotify = on_spotify
