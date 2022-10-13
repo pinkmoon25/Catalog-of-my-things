@@ -1,7 +1,7 @@
 require 'json'
-require_relative './classes/book'
-require_relative './classes/label'
-require_relative './load_books'
+require_relative 'book'
+require_relative 'label'
+require_relative 'load_books'
 
 class BookApp
   def self.add_label
@@ -32,25 +32,25 @@ class BookApp
   end
 
   def self.save_book(book)
-    if File.size?('./books.json')
-      file = File.read('./books.json')
+    if File.size?('./storage/books.json')
+      file = File.read('./storage/books.json')
       books = JSON.parse(file)
       books << { publisher: book.publisher, cover_state: book.cover_state }
-      File.write('./books.json', JSON.pretty_generate(books))
+      File.write('./storage/books.json', JSON.pretty_generate(books))
     else
-      File.write('./books.json',
+      File.write('./storage/books.json',
                  JSON.pretty_generate([{ publisher: book.publisher, cover_state: book.cover_state }]))
     end
   end
 
   def self.save_label(label)
-    if File.size?('./labels.json')
-      file = File.read('./labels.json')
+    if File.size?('./storage/labels.json')
+      file = File.read('./storage/labels.json')
       labels = JSON.parse(file)
       labels << { title: label.title, color: label.color }
-      File.write('./labels.json', JSON.pretty_generate(labels))
+      File.write('./storage/labels.json', JSON.pretty_generate(labels))
     else
-      File.write('./labels.json', JSON.pretty_generate([{ title: label.title, color: label.color }]))
+      File.write('./storage/labels.json', JSON.pretty_generate([{ title: label.title, color: label.color }]))
     end
   end
 

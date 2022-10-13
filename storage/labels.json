@@ -26,5 +26,13 @@
   {
     "title": "yolo",
     "color": "black"
+  },
+  {
+    "title": "Animal farms",
+    "color": "Yellow"
+  },
+  {
+    "title": "Label",
+    "color": "red"
   }
 ]

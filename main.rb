@@ -1,7 +1,7 @@
 require_relative './classes/views/music_album_view'
 require_relative './classes/views/genre_view'
 require_relative './classes/game_app'
-require_relative 'book_app'
+require_relative './classes/book_app'
 
 def run_first(option)
   case option
@@ -24,13 +24,11 @@ end
 
 def run_second(option)
   case option
-  when 7 # list
-
-  when 8
+  when 7
     BookApp.create_book
-  when 9
+  when 8
     MusicAlbumView.add
-  when 10
+  when 9
     GameApp.add_game
   else
     puts 'Command Not Found'
@@ -47,15 +45,14 @@ def ask_option
     '4. List all genres',
     '5. List all labels',
     '6. List all authors',
-    '7. List all sources',
-    '8. Add a book',
-    '9. Add a music album',
-    '10. Add a game',
-    '11. Exit'
+    '7. Add a book',
+    '8. Add a music album',
+    '9. Add a game',
+    '0. Exit'
   ]
   puts options
   choice = gets.chomp.to_i
-  return puts 'Thank you for using the app' unless choice != 11
+  return puts 'Thank you for using the app' unless choice != 0
 
   run_first(choice)
   ask_option

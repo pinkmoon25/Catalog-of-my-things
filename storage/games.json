@@ -52,5 +52,17 @@
     "Multiplayer": false,
     "Last_played": "12-12-2023",
     "Author": "Nazara technologies"
+  },
+  {
+    "Publish_date": "2022-10-12",
+    "Multiplayer": false,
+    "Last_played": "12-10-2022",
+    "Author": "Nvidia games"
+  },
+  {
+    "Publish_date": "2022-12-12",
+    "Multiplayer": true,
+    "Last_played": "12-10-2022",
+    "Author": "New Horixon"
   }
 ]
