@@ -6,6 +6,8 @@ CREATE TABLE item (
     publish_date DATE,
     archived BOOLEAN,
     FOREIGN KEY (genre_id) REFERENCES genres (id),
+    FOREIGN KEY (author_id) REFERENCES author (id),
+    FOREIGN KEY (label_id) REFERENCES label (id),
 );
 
 CREATE TABLE books (
