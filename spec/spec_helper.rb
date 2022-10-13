@@ -1,0 +1,5 @@
+require_relative '../classes/models/genre'
+require_relative '../classes/models/music_album'
+require_relative '../classes/item'
+require_relative '../classes/controllers/genre_controller'
+require_relative '../classes/controllers/music_album_controller'

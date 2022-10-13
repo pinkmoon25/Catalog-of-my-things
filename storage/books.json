@@ -1,0 +1,38 @@
+[
+  {
+    "publisher": "Tushar",
+    "cover_state": "Good"
+  },
+  {
+    "publisher": "Good Action",
+    "cover_state": "bad"
+  },
+  {
+    "publisher": "Microverse",
+    "cover_state": "good"
+  },
+  {
+    "publisher": "Tushar",
+    "cover_state": "bad"
+  },
+  {
+    "publisher": "Chrigae",
+    "cover_state": "bad"
+  },
+  {
+    "publisher": "jewe",
+    "cover_state": "bad"
+  },
+  {
+    "publisher": "Chrisk",
+    "cover_state": "bad"
+  },
+  {
+    "publisher": "Penguis",
+    "cover_state": "good"
+  },
+  {
+    "publisher": "harper collins",
+    "cover_state": "good"
+  }
+]
