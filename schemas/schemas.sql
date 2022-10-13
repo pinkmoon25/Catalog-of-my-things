@@ -25,6 +25,7 @@ CREATE TABLE music_album
 (
     id         INT GENERATED ALWAYS AS IDENTITY,
     on_spotify BOOLEAN,
+    item       INT,
     CONSTRAINT fk_item
         FOREIGN KEY (item_id)
             REFERENCES item (id)
