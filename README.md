@@ -14,12 +14,26 @@ To get a local copy up and running follow these simple example steps.
 
 If you dont have Ruby installed on your computer, you can download it from [here](https://www.ruby-lang.org/en/downloads/).
 
-Ones you have the files on your machine, you can run the app by running the following command in your terminal:
+Once you have installed ruby, you can follow this list:
 
-```bash
+#### 1. Clone this repository or download the Zip folder:"
+
+```bash command
+$ git clone https://github.com/PinkMoon25/Catalog-of-my-things.git
+```
+#### 2. Navigate to the location of the folder in your machine:
+```bash command
+you@your-Pc-name:~$ cd <folder>
+```
+#### 3. Press Enter to navigate to your local clone.
+#### 4. From the terminal run the app with the following command
+```bash command
 ruby main.rb
 ```
-
+### 5. You can run the test with the following command
+```bash command
+rspec spec
+```
 ## Authors
 
 👤 **Ushindi Bienvenu**
