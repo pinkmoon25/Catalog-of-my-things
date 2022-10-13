@@ -4,8 +4,8 @@ require_relative 'author'
 require_relative 'load_storage'
 
 class GameApp
-  @game_file = './data/games.json'
-  @author_file = './data/authors.json'
+  @game_file = './storage/games.json'
+  @author_file = './storage/authors.json'
 
   def self.create_author
     puts 'Enter Author details: '

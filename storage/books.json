@@ -26,5 +26,13 @@
   {
     "publisher": "Chrisk",
     "cover_state": "bad"
+  },
+  {
+    "publisher": "Penguis",
+    "cover_state": "good"
+  },
+  {
+    "publisher": "harper collins",
+    "cover_state": "good"
   }
 ]
