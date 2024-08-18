@@ -1,11 +1,28 @@
-# Catalog Of My Things
+### Catalog Of My Things 📚🎵🎬🎮
 
-> This project,is about a console app that will help you to keep a record of different types of things you own: books, music albums, movies, and games. Everything is built based on the [UML class diagram](https://github.com/microverseinc/curriculum-ruby/blob/main/group-capstone/images/catalog_of_my_things.png) presented below. The data are stored in JSON files for future use
+A console application designed to help you keep a detailed record of various items you own, including books, music albums, movies, and games. Built according to a [UML class diagram](https://github.com/microverseinc/curriculum-ruby/blob/main/group-capstone/images/catalog_of_my_things.png) , this app manages and organizes your personal collection, storing data in JSON files for easy access and future use.
+
+### Features:
+- **Item Management:**
+  - **Books:** Record details such as title, author, and genre.
+  - **Music Albums:** Track album title, artist, and genre.
+  - **Movies:** Maintain information including title, director, and release year.
+  - **Games:** Keep a record of game title, platform, and genre.
+
+- **Data Storage:**
+  - **JSON Files:** Store and retrieve item data in JSON format for persistence and future reference.
+
+- **Console Interface:**
+  - **User Interaction:** Simple text-based interface for adding, viewing, and managing items in your collection.
+
+### Built With:
+- Ruby for the console application
+- JSON for data storage
+
+---
+
 ## Project Description
 [Click me](https://drive.google.com/file/d/1I0ZTVuMGFdTeiWukzdqy-lK-cY4U-3ER/view?usp=sharing)
-## Built With
-
-- Ruby
 
 ## Getting Started
 
